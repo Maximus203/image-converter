@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Convertisseur d'Images en WebP</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Convertisseur d'Images en WebP</h1>
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+    <form method="post">
+        <label for="input_dir">Répertoire d'entrée :</label>
+        <input type="text" id="input_dir" name="input_dir" required>
+        <br><br>
+        <label for="output_dir">Répertoire de sortie :</label>
+        <input type="text" id="output_dir" name="output_dir" required>
+        <br><br>
+        <button type="submit">Convertir</button>
+    </form>
+</body>
+</html>
