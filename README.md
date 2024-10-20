@@ -2,6 +2,8 @@
 
 Bienvenue dans le projet de conversion d'images en WebP ! Ce projet vous permet de convertir facilement des images aux formats PNG, JPG et JPEG en WebP via une interface web conviviale.
 
+![Apercu](app/static/images/image-converter.gif)
+
 ## 🌐 Fonctionnalités
 
 - **Interface web simple** : Fournit une interface pour sélectionner les répertoires d'entrée et de sortie.

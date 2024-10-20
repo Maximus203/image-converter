@@ -1,34 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Arial, sans-serif;
-    margin: 50px;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog {
+    background-color: #799da6;
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: space-around;
+}
+
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    justify-content: space-around;
+}
+
+.titre {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.message {
+    color: #c91111;
+    font-weight: 600;
+    width: fit-content;
+    background-color: #b6b6b6;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    label {
+        width: 150px;
+    }
+
+    input {
+        padding: 5px;
+        width: 300px;
+        border-radius: .4em;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: #d196a3;
+        color: white;
+        font-weight: 600;
+        font-size: 1.2em;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    button:hover {
+        background-color: #8c515d;
+    }
+}
+
+.left,
+.right {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    width: 50%;
+}
+
+.right {
+    width: 50%;
 }
 
 h1 {
     color: #333;
-}
-
-label {
-    display: inline-block;
-    width: 150px;
-}
-
-input {
-    padding: 5px;
-    width: 300px;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #5CB85C;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #4CAE4C;
-}
-
-p {
-    color: red;
+    text-align: center;
 }
